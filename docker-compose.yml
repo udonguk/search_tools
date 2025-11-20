@@ -5,7 +5,7 @@ services:
     build: .
     container_name: search_tools
     ports:
-      - "3000:3000"
+      - "8833:3000"
     volumes:
       - .:/app
       - /app/node_modules

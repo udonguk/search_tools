@@ -83,8 +83,8 @@ npm run dev
 ```
 
 서버가 실행되면 다음 URL에서 접근할 수 있습니다:
-- 서버 정보: http://localhost:3000/
-- 헬스체크: http://localhost:3000/health
+- 서버 정보: http://localhost:8833/
+- 헬스체크: http://localhost:8833/health
 - API 문서: 아래 API 명세 참조
 
 ### Docker 실행
@@ -279,17 +279,17 @@ GET /api/sources
 
 ### 헬스체크
 ```bash
-curl http://localhost:3000/health
+curl http://localhost:8833/health
 ```
 
 ### GET 방식 검색
 ```bash
-curl "http://localhost:3000/api/search?q=LangChain"
+curl "http://localhost:8833/api/search?q=LangChain"
 ```
 
 ### POST 방식 검색
 ```bash
-curl -X POST http://localhost:3000/api/search \
+curl -X POST http://localhost:8833/api/search \
   -H "Content-Type: application/json" \
   -d '{
     "query": "LangChain",
@@ -303,7 +303,7 @@ curl -X POST http://localhost:3000/api/search \
 
 ### 특정 소스만 활성화
 ```bash
-curl -X POST http://localhost:3000/api/search \
+curl -X POST http://localhost:8833/api/search \
   -H "Content-Type: application/json" \
   -d '{
     "query": "LangChain",
@@ -320,7 +320,7 @@ curl -X POST http://localhost:3000/api/search \
 ### HTTP Request 노드 설정
 
 1. **Method**: POST
-2. **URL**: `http://localhost:3000/api/search`
+2. **URL**: `http://localhost:8833/api/search`
 3. **Body Content Type**: JSON
 4. **Body**:
 ```json
