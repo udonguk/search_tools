@@ -1,5 +1,6 @@
 # Dependencies
 node_modules/
+package-lock.json
 
 # Environment variables
 .env
@@ -8,20 +9,45 @@ node_modules/
 
 # Test coverage
 coverage/
+*.lcov
 
 # Logs
 *.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # OS files
 .DS_Store
 Thumbs.db
+*.bak
+*~
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*.sublime-project
+*.sublime-workspace
 
 # Search results
 search_results_*.json
+
+# Temporary files
+MEMORY.md
+*.tmp
+*.temp
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# Build artifacts
+dist/
+build/
+*.tsbuildinfo
+
+# Debug
+.pnp.*
+.yarn/
