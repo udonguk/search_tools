@@ -26,10 +26,10 @@ services:
       start_period: 5s
     restart: unless-stopped
     networks:
-      - n8n-network
+      - default
 
 networks:
-  n8n-network:
+  default:
     external: true
     name: self-hosted-ai-starter-kit_demo
 
